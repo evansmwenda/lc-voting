@@ -17,12 +17,20 @@
     </head>
     <body class="font-sans text-gray-900 text-sm">
         <header class="flex items-center justify-between px-8 py-4">
-            <a href="#">voting logo</a>
+            <a href="#"><img src="{{ asset('img/logo.png')}}" alt="LOGO" class="h-5"></a>
             <div class="flex items-center">
                 @if (Route::has('login'))
                     <div class=" px-6 text-right z-10">
                         @auth
-                            <a href="{{ url('/dashboard') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</a>
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+
+                            <a href="{{route('logout')}}"
+                                    onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                                {{ __('Log Out') }}
+                            </a>
+                        </form>
                         @else
                             <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Log in</a>
 
