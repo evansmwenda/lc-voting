@@ -48,10 +48,43 @@
         </header>
         <main class="container mx-auto max-w-custom flex">
             <div class="w-70 mr-5">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur excepturi dolorum perspiciatis aspernatur suscipit, quia voluptatibus amet eligendi facere dignissimos sint repudiandae sunt molestiae mollitia aliquam dolores, eum doloribus neque totam harum minima accusantium nisi exercitationem. Dicta modi quod corporis. Non, iure soluta reprehenderit at et ab voluptas blanditiis? Veritatis dolores sed dolorem dignissimos eos dolorum. Nobis enim porro blanditiis, laudantium, numquam atque corrupti dolor voluptatum, quae aperiam rerum! Sequi esse pariatur et soluta consequatur incidunt alias facere repellendus dignissimos? Iusto mollitia fugit dolor facilis, quasi nobis ex maiores suscipit necessitatibus sit odit dolore labore sunt hic corporis optio quidem!
+                Add idea form here<br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Consequatur et porro ratione debitis enim numquam a culpa qui, 
+                repudiandae repellat incidunt commodi omnis ipsa. Quia minus repellendus magnam maxime
+                 possimus.
             </div>
             <div class="w-175">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore aut porro voluptates odit modi temporibus eum perferendis architecto consequatur voluptas? Voluptatibus tempore quos saepe quasi totam ratione officiis accusamus asperiores ex perferendis. Quis omnis, ratione voluptas id provident quod distinctio officiis. Dolorum pariatur at doloremque eaque aut ratione reiciendis voluptatem ipsum autem? At mollitia iusto est nulla sunt reprehenderit unde voluptate quia? Numquam quam in perspiciatis totam, id dolores. Eos numquam perspiciatis blanditiis dolor magnam unde inventore repellat consequatur, illum quisquam ut aspernatur laborum? Neque necessitatibus quidem ea repellat! Nam molestiae nostrum placeat odio ullam, hic minima veritatis. Minus provident magnam atque, accusantium sint cum asperiores omnis neque molestiae cumque quae nostrum ad impedit dicta ratione veniam iure voluptatum eligendi unde mollitia harum itaque. Qui ut molestiae harum corporis illo. Cum esse optio, sapiente blanditiis vel sunt perspiciatis cupiditate minima dolorum temporibus consectetur modi ratione deserunt inventore soluta? Odio vel minus tenetur autem nisi blanditiis, praesentium non amet inventore, ea nemo, qui voluptatibus recusandae animi. Ratione similique blanditiis assumenda quia commodi eos nam consequuntur recusandae, alias cumque adipisci incidunt reiciendis pariatur consequatur id dolores. At recusandae consequatur corporis itaque sapiente soluta inventore praesentium nulla earum consequuntur? Repellat necessitatibus adipisci tempora?</div>
+                <nav class="flex items-center justify-between text-xs">
+                    <ul class="flex uppercase font-semibold border-b-4 pb-3 space-x-10">
+                        <li><a href="#" class="border-b-4 pb-3 border-blue">All Ideas (87)</a></li>
+                        <li>
+                            <a href="#" class="text-gray-400 transition duration-150 ease-in border-b-4 pb-3 hover:border-blue">
+                                Considering (6)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 transition duration-150 ease-in border-b-4 pb-3 hover:border-blue">
+                                In progress (1)
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="flex uppercase font-semibold border-b-4 pb-3 space-x-10">
+                        <li>
+                            <a href="#" class="text-gray-400 transition duration-150 ease-in border-b-4 pb-3 hover:border-blue">
+                                Implemented (10)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 transition duration-150 ease-in border-b-4 pb-3 hover:border-blue">
+                                Closed (5)
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mt-8">
+                    {{ $slot }}
+                </div>
+            </div>
         </main>
     </body>
 </html>
